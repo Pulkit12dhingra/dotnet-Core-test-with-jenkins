@@ -1,0 +1,18 @@
+﻿@model WebApplication1.Models.Calci
+<html>
+<body>
+    <h2>Calculator Program</h2>
+        <form method="post" asp-action="Display" asp-controller="Calculator">
+            First Value: <input type="number" name="val1" asp-for="value1" />
+            <br>
+            Second Value: <input type="number" name="val2" asp-for="value2" />
+            
+            Operation: <input type="text" name="Operator" asp-for="operatorr" />
+
+            <button type="submit">
+                Calculate
+            </button>
+        </form>
+</body>
+</html>
+
